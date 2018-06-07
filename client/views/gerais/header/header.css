@@ -1,0 +1,42 @@
+nav {
+    background: linear-gradient(-80deg, #160505, #1c2326);
+}
+
+#loginButtons{
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.navbar-brand {
+    color: white;
+    padding-right: 80%;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+#login-buttons a {
+    color: white; 
+    text-decoration: none;
+}
+
+#login-buttons{
+    padding-top: 1.4%;
+}
+
+.accounts-dialog{
+
+}
+
+#login-dropdown-list{
+    position: absolute;
+    top: 38px;
+    left: -80px;
+    background-color: black;
+    
+}
+
+a {
+    color: black;
+}

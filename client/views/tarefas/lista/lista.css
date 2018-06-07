@@ -1,0 +1,51 @@
+.header-lista-tarefas {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-nova-tarefa{
+    padding-top: 2%;
+}
+
+#btn-nova-tarefa {
+    background: linear-gradient(-80deg, #160505, #1c2326);
+}
+
+#btn-nova-tarefa:hover {
+    color: white;
+    background: linear-gradient(-80deg, #462E2E, #524E4E);
+}
+
+.card {
+    background-color: white;
+}
+
+.sem-tarefas{
+    background-color: #EEE9E9;  
+    display: flex;
+    justify-content: center;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#abre-modal-cadastro{
+    height: 35px;
+    max-height: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header-lista-tarefas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #div-nova-tarefa{
+        padding-top: 0%;
+    }
+}

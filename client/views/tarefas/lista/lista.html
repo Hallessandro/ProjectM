@@ -1,0 +1,58 @@
+<template name="listaTarefas">
+    <div class="container">
+        {{# if tarefas.count}}
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3 class="card-title">Minhas tarefas</h3>
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cadastraTarefa" id="abre-modal-cadastro">Cadastrar nova</button>
+                </div>
+                <hr>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td>Título</td>
+                            <td>Opções</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{# each tarefas}}
+                        <tr>
+                            <td>{{titulo}}</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-sm btn-primary btn-editar">Editar</button>
+                                    <button class="btn btn-sm btn-danger btn-excluir">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {{ else}}
+        <div class="sem-tarefas">
+            <p class="lead">
+                Nenhuma tarefa encontrada
+            </p>
+        </div>
+        <div class="sem-tarefas">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#cadastraTarefa">Cadastrar nova</button>
+        </div>
+        {{/if}}
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="cadastraTarefa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Cadastrar tarefa</h3>
+                </div>
+                {{>cadastrarTarefa}}
+            </div>
+        </div>
+    </div>
+</template>

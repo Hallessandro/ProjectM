@@ -1,0 +1,15 @@
+.page-footer {
+  background: linear-gradient(-80deg, #160505, #1c2326);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-default {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
